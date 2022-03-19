@@ -6,16 +6,16 @@ import com.aidanmurphey.todocli.exceptions.TaskNotFoundException;
 
 public class SortCommand implements Command {
 
-  public int handle(String[] args) throws TaskNotFoundException {
+	public int handle(String[] args) throws TaskNotFoundException {
 		TaskManager instance = TaskManager.getInstance();
-    instance.sort();
-    instance.exportToSaveFile();
+		instance.sort();
+		instance.exportToSaveFile();
 
-    return 0;
-  }
+		return 0;
+	}
 
-  public String getDescription() {
-    return "Reorder the task list, putting all unfinished tasks first";
-  }
+	public String getDescription() {
+		return "Reorder the task list, putting all unfinished tasks first";
+	}
 
 }

@@ -6,8 +6,8 @@ import com.aidanmurphey.todocli.exceptions.TaskNotFoundException;
 
 public class AddCommand implements Command {
 
-  public int handle(String[] args) throws TaskNotFoundException {
-    if (args.length == 0) {
+	public int handle(String[] args) throws TaskNotFoundException {
+		if (args.length == 0) {
 			System.err.println("Invalid arguments! You must provide at least once task to add");
 			return 1;
 		}
@@ -15,13 +15,13 @@ public class AddCommand implements Command {
 		TaskManager instance = TaskManager.getInstance();
 		for(String newTask : args)
 			instance.add(newTask);
-    instance.exportToSaveFile();
+		instance.exportToSaveFile();
 
-    return 0;
+		return 0;
   }
 
-  public String getDescription() {
-    return "Add a new task to the todo list";
-  }
+	public String getDescription() {
+		return "Add a new task to the todo list";
+	}
 
 }

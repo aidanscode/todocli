@@ -23,7 +23,7 @@ public class ListCommand implements Command {
 		return 0;
 	}
 
-  public String getDescription() {
+	public String getDescription() {
 		return "Lists all saved tasks";
 	}
 

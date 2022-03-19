@@ -31,7 +31,7 @@ public class TaskManager {
 	}
 
 	private void importFromSaveFile() {
-    File saveFile = this.getSaveFile();
+		File saveFile = this.getSaveFile();
 		BufferedReader br = null;
 		try {
 			FileReader fr = new FileReader(saveFile);
@@ -66,11 +66,11 @@ public class TaskManager {
 	public void exportToSaveFile() {
 		File saveFile = this.getSaveFile();
 		String filePath = saveFile.getAbsolutePath();
-		
+
 		FileWriter fileWriter = null;
 		try {
 			fileWriter = new FileWriter(filePath);
-			
+
 			for (Task task : this.tasks) {
 				fileWriter.write(task.isDone() ? "1" : "0");
 				fileWriter.write("," + task.getDetails() + "\n");
