@@ -4,10 +4,10 @@ import com.aidanmurphey.todocli.commands.*;
 
 class Main {
 
-  public static void main(String[] args) {
+	public static void main(String[] args) {
 		Main.init();
 
-    int statusCode = CommandManager.getInstance().handle(args);
+		int statusCode = CommandManager.getInstance().handle(args);
 		System.exit(statusCode);
 	}
 
