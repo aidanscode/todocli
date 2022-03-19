@@ -8,9 +8,9 @@ Inspired by: https://github.com/sioodmy/todo, same idea, but using Java
 
 * todo list
 
-* todo done [index(ex)]
+* todo done [index]
 
-* todo rm [index(es)]
+* todo rm [index]
 
 * todo sort
 
