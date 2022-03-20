@@ -1,0 +1,4 @@
+#! /bin/bash
+
+java -jar ./target/todocli-1.0.0.jar "$@"
+exit $?
